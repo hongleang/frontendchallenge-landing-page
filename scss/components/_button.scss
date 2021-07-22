@@ -1,0 +1,34 @@
+// Button
+.btn {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover{
+  background: rgba(255, 255, 255, 0.651);
+}
+
+.btn:focus {
+  background: none;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-white{
+  background: $white;
+}
+
+
+
+.text--orange{
+  color: $brightOrange;
+}
+
+.text--cyan{
+  color: $cyan;
+}
+
+.text--dark{
+  color: $darkCyan;
+}

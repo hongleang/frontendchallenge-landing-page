@@ -1,0 +1,45 @@
+//Abstracts
+@import "./abstracts/abstracts";
+
+//Base Styles
+// @import "base/";
+
+//Components
+@import "components/components";
+
+//Layout
+// @import "layouts/";
+
+
+:root {
+  font-size: $font-size;
+  line-height: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  background: $lightGray;
+  font-family: $paragraph;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $header;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: $smallTablet) {
+  body {
+    height: 100vh;
+  }
+}
