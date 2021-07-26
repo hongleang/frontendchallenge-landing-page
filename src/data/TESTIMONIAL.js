@@ -1,5 +1,4 @@
-{
-  "TESTIMONIAL_DATA": [{
+const TESTIMONIAL_DATA = [{
       "profileImg": "/images/image-emily.jpg",
       "comment": "We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
       "name": "Emily R.",
@@ -17,5 +16,6 @@
       "name": "Jennie F.",
       "role": "Business Owner"
     }
-  ]
-}
+  ];
+
+export default TESTIMONIAL_DATA;
