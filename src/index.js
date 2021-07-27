@@ -1,5 +1,6 @@
-import  { ConstructingAdvertItem, ConstructingTestimonials } from './scripts/ContructingDom';
+import  { ConstructingAdvertItem, ConstructingServices, ConstructingTestimonials } from './scripts/ContructingDom';
 
-
-// ConstructingAdvertItem();
-// ConstructingTestimonials();
+alert("constructing dom...");
+ConstructingAdvertItem();
+ConstructingServices();
+ConstructingTestimonials();

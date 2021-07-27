@@ -1,10 +1,16 @@
 const SERVICES = [{
-  "title": "Photography",
-  "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, sed minima totam provident in id cupiditate vero laudantium voluptatibus, perspiciatis cumque facilis ut illum. Provident."
+  "title": "Graphic design",
+  "description": "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.",
+  "desktopImg": "/images/desktop/image-graphic-design.jpg",
+  "mobileImg": "images/mobile/image-graphic-design.jpg",
+  "link": "Learn more"
 },
 {
-  "title": "Graphic Design",
-  "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum, sed minima totam provident in id cupiditate vero laudantium voluptatibus, perspiciatis cumque facilis ut illum. Provident."
+  "title": "Photography",
+  "description": "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",
+  "desktopImg": "/images/desktop/image-photography.jpg",
+  "mobileImg": "images/mobile/image-photography.jpg",
+  "link": "Learn more"
 }
 ];
 

@@ -1,0 +1,17 @@
+@import "adverts";
+@import "footer";
+@import "gallery";
+@import "hero";
+@import "navbar";
+@import "services";
+@import "testimonials";
+
+// Layout container.container {
+  .layout {
+    display: grid; 
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2rem 25rem auto;
+    gap: 0px 0px;
+  }
+    

@@ -1,0 +1,35 @@
+// Footer 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  color: $darkModerateCyan;
+  background-color: $darkCyan;
+  
+  img {
+    margin-bottom: 1rem;
+    scale: 1.5;
+    filter: $darkModerateCyan(100%);
+  }
+  ul {
+    padding: 0;
+  }
+
+  ul li {
+    display: inline-block;
+    font-weight: 600;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  &__item li{
+    font-size: 1rem;
+    margin: 0 .4rem;
+  }
+
+  .social-icons li {
+    margin: 0 1.5rem;
+  }
+}

@@ -1,0 +1,34 @@
+.advert {
+  grid-row-start: 3;
+  grid-row-end: 6;
+  display: grid;
+  grid-template-columns: 1fr;
+  &__item{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 725px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.content {
+  padding: 0 2rem;
+  text-align: center;
+  &__header {
+    font-weight: 700;
+  }
+
+  &__link {
+    color: black;
+    margin-bottom: 1rem;
+    font-family: $header;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
