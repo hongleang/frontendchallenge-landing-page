@@ -1,14 +1,14 @@
 import ADVERTS_DATA from '../data/ADVERTS';
 import TESTIMONIAL_DATA from '../data/TESTIMONIAL';
-import TESTIMONIAL_DATA from '../data/SERVICES';
+import SERVICES from '../data/SERVICES';
 
 const ConstructingAdvertItem = () => {
   const destinationDom = document.querySelector('.advert');
   ADVERTS_DATA.map( data => {
-      destinationDom.insertAdjacentHTML('beforeend', 
+      destinationDom.insertAdjacentHTML('beforeend',
       `
       <div class="advert__item">
-        <<div class="hero__img"></div>
+        <div class="advert__img" style="background-image: url(${data.mobileImg});"></div>
         <div class="content">
           <h2 class="content__header">${data.title}</h2>
           <p class="content__text">${data.description}</p>
@@ -22,20 +22,19 @@ const ConstructingAdvertItem = () => {
 
 const ConstructingServices = () => {
   const destinationDom = document.querySelector('.advert');
-  ADVERTS_DATA.map( data => {
+  SERVICES.map( data => {
       destinationDom.insertAdjacentHTML('afterend', 
       `
-      div class="services">
+      <div class="services" style="background-image: url(${data.mobileImg});">
         <div class="content">
-          <h2 class="content__header">Somthing</h2>
-          <p class="content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error omnis vel blanditiis!</p>
+          <h2 class="content__header">${data.title}</h2>
+          <p class="content__text">${data.description}</p>
         </div>
       </div>
       `
     )
   })
 };
-// 
 
 const ConstructingTestimonials = () => {
   const destinationDom = document.querySelector('.testimonials');

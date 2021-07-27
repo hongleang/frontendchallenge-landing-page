@@ -1,0 +1,12 @@
+.services {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  .content {
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+  }
+}
