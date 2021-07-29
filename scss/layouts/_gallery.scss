@@ -11,3 +11,11 @@
     height: 100%;
   }
 }
+
+
+@media screen and (min-width: 570px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
