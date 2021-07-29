@@ -7,35 +7,52 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
-<body class="">
+<body>
+<div class="dropdown">
+  <div class="modal">
+    <ul class="modal__items">
+      <li class="modal__item"><a href="#">About</a></li>
+      <li class="modal__item"><a href="#">Services</a></li>
+      <li class="modal__item"><a href="#">Projects</a></li>
+      <li class="modal__item"><a href="#">Contact</a></li>
+    </ul>
+  </div>
   <div class="layout">
     <nav class="navbar">
       <img class="navbar__img" src="./images/logo.svg" alt="logo">
-      <img class="navbar__menu" src="./images/icon-hamburger.svg" alt="">
+      <a class="navbar__menu" id="hamburgerButton">
+        <img class="" src="./images/icon-hamburger.svg" alt="">
+      </a>
       <ul class="navbar__list">
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>  
     </nav>
     <div class="hero">
-      <div class="hero__img" style="background-image: url(images/mobile/image-header.jpg);"></div>
+      <div class="hero__img" style="background-image: url(images/desktop/image-header.jpg);"></div>
       <h2 class="hero__header">We are creatives</h2>
       <img class="hero__arrow" src="./images/icon-arrow-down.svg" alt="">
     </div>
     
     <div class="advert">
     </div>
+
+    <div class="services-wrapper">
+    </div>
     
     <div class="testimonials">
+      <h4 class="testimonials__header">Client Testimonials</h4>
+      <div class="testimonials-wrapper">
+      </div>
     </div>
 
     <div class="gallery">
-      <img class="gallery__img" src="./images/mobile/image-gallery-milkbottles.jpg" alt="gallery-img">
-      <img class="gallery__img" src="./images/mobile/image-gallery-orange.jpg" alt="gallery-img">
-      <img class="gallery__img" src="./images/mobile/image-gallery-cone.jpg" alt="gallery-img">
-      <img class="gallery__img" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="gallery-img">
+      <img class="gallery__img" src="./images/desktop/image-gallery-milkbottles.jpg" alt="gallery-img">
+      <img class="gallery__img" src="./images/desktop/image-gallery-orange.jpg" alt="gallery-img">
+      <img class="gallery__img" src="./images/desktop/image-gallery-cone.jpg" alt="gallery-img">
+      <img class="gallery__img" src="./images/desktop/image-gallery-sugarcubes.jpg" alt="gallery-img">
     </div>
   
     <div class="footer">
@@ -57,7 +74,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Hongleang Lim</a>.
   </div>
 
   <script src="./deploy/main.bundle.js"></script>

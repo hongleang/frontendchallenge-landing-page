@@ -1,6 +1,7 @@
 import  { ConstructingAdvertItem, ConstructingServices, ConstructingTestimonials } from './scripts/ContructingDom';
+import Modal from './scripts/Modal';
 
-alert("constructing dom...");
+Modal();
 ConstructingAdvertItem();
 ConstructingServices();
 ConstructingTestimonials();
