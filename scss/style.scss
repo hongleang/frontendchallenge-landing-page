@@ -42,18 +42,19 @@ a {
 
 
 .dropdown {
-  li {
+  .modal__item {
     position: relative;
     list-style: none;
     width: 200px;
     height: 60px;
   }
 
-  li a {
+  .modal__item a {
     color: $darkGrayishBlue;
+    cursor: pointer;
   }
 
-  li::before {
+  .modal__item::before {
     content: "";
     position: absolute;
     display: block;
@@ -68,7 +69,7 @@ a {
     transform: scaleX(0);
   }
   
-  li:hover {
+  .modal__item:hover {
     &::before {
       transform: scaleX(1);
     }
@@ -79,7 +80,11 @@ a {
   
 }
 
-.overlay {
+.modal {
+  display: none;
+}
+
+.modal.active {
   display: flex;
   justify-content: center;
   align-items: center;
