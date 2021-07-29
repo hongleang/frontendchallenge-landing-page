@@ -150,6 +150,13 @@
   height: 100%;
 }
 
+@media screen and (min-width: 570px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
 .hero {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -232,7 +239,7 @@
     left: 0;
     background-color: white;
     border-radius: 3rem;
-    transition: transform .2s ease-in;
+    transition: transform .4s ease-in-out;
     z-index: -45;
     transform: scaleX(0);
   }
@@ -392,7 +399,7 @@ a {
   margin-right: 0;
   background-color: #fad400;
   border-radius: 3rem;
-  transition: transform .2s ease-in;
+  transition: transform .5s ease-in;
   z-index: -2;
   transform: scaleX(0);
 }
