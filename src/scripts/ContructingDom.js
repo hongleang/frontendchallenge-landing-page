@@ -8,7 +8,7 @@ const ConstructingAdvertItem = () => {
       destinationDom.insertAdjacentHTML('beforeend',
       `
       <div class="advert__item">
-        <div class="advert__img" style="background-image: url(${data.mobileImg});"></div>
+        <div class="advert__img" style="background-image: url(${data.desktopImg});"></div>
         <div class="content">
           <h2 class="content__header">${data.title}</h2>
           <p class="content__text">${data.description}</p>
@@ -21,11 +21,11 @@ const ConstructingAdvertItem = () => {
 };
 
 const ConstructingServices = () => {
-  const destinationDom = document.querySelector('.advert');
+  const destinationDom = document.querySelector('.services-wrapper');
   SERVICES.map( data => {
-      destinationDom.insertAdjacentHTML('afterend', 
+      destinationDom.insertAdjacentHTML('beforeend', 
       `
-      <div class="services" style="background-image: url(${data.mobileImg});">
+      <div class="services" style="background-image: url(${data.desktopImg});">
         <div class="content">
           <h2 class="content__header">${data.title}</h2>
           <p class="content__text">${data.description}</p>
@@ -37,11 +37,10 @@ const ConstructingServices = () => {
 };
 
 const ConstructingTestimonials = () => {
-  const destinationDom = document.querySelector('.testimonials');
+  const destinationDom = document.querySelector('.testimonials-wrapper');
   TESTIMONIAL_DATA.map( data => {
       destinationDom.insertAdjacentHTML('beforeend', 
-      `
-      <h4 class="testimonials__header">Client Testimonials</h4>
+      `      
       <div class="testimonials-item">
         <img src="${data.profileImg}" alt="user_avatar" class="testimonials-item__img">
         <p>${data.comment}</p>

@@ -9,6 +9,10 @@
     letter-spacing: .1rem;
   }
 }
+
+.testimonials-wrapper {
+  display: grid;
+}
 .testimonials-item{
   line-height: 1.8rem;
   &__img {
@@ -18,7 +22,9 @@
   p {
     color: $veryDarkBlue ;
     font-weight: 600;
-    margin: 1rem 0;
+    max-width: 300px;
+    margin: 1.5rem auto;
+
   }
   h4 {
     font-size: 1.3rem;
@@ -26,9 +32,27 @@
     margin: 0;
   }
   .text-small {
-    margin: 0;
+    margin: 0 auto;
     font-size: .7rem;
     color: $darkGrayishBlue ;
     font-weight: 700;
+  }
+}
+
+
+@media screen and (min-width: 670px) {
+  .testimonials-wrapper{
+    grid-template-columns: repeat(3, 1fr );
+    gap: 2rem;
+    
+  }
+  .testimonials-item {
+    height: 400px;
+    
+    p:nth-of-type(1) {
+      min-height: 170px;
+      max-height: 200px;
+      word-wrap: break-word;
+    }
   }
 }

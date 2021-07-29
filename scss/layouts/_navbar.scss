@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
@@ -7,9 +7,57 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
+  margin-top: 2rem;
   z-index: 4;
 
   &__list {
     display: none;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .navbar {
+    &__menu{
+      display: none;
+      align-items: center;
+    }
+    &__list {
+      display: flex;
+      list-style: none;
+      li {
+        position: relative;
+      }
+
+      li a{
+        margin: 0 2rem;
+        color: #fff;
+        font-weight: 700;
+      }
+
+      li::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 150%;
+        top: -20%;
+        right: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        border-radius: 3rem;
+        transition: transform .2s ease-in;
+        z-index: -45;
+        transform: scaleX(0);
+      }
+      
+      li:hover {
+        &::before {
+          transform: scaleX(1);
+        }
+        a {
+          color: black;
+        }
+      }
+    }
   }
 }

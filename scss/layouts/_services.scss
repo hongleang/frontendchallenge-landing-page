@@ -1,12 +1,30 @@
+.services-wrapper {
+  display: grid;
+  grid-template-rows: repeat (2, 1fr);
+  width: 100%;
+  height: auto;
+}
 .services {
-  position: relative;
+  display: grid;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 600px;
+  align-content: flex-end;
+
   .content {
-    position: absolute;
-    bottom: 2rem;
     text-align: center;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 570px) {
+  .services-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .services {
+    .content {
+      height: 250px;
+    }
   }
 }
