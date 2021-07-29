@@ -207,6 +207,11 @@
   z-index: 4;
 }
 
+.navbar__img {
+  transform: scale(1.5);
+  margin-left: 2rem;
+}
+
 .navbar__list {
   display: none;
 }
