@@ -10,6 +10,11 @@
   margin-top: 2rem;
   z-index: 4;
 
+  &__img {
+    transform: scale(1.5);
+    margin-left: 2rem;
+  }
+
   &__list {
     display: none;
   }
