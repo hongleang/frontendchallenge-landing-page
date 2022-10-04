@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/hongleang/frontendchallenge-landing-page)
+- Solution URL: [Add solution URL here](https://hongleang.github.io/frontendchallenge-landing-page/)
 
 ## My process
 
